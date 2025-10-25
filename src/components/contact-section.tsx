@@ -71,7 +71,7 @@ export function ContactSection() {
             </div>
 
             <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
-              Have questions or need assistance? Reach out to our team — we're here to help you find the right solutions
+              Have questions or need assistance? Reach out to our team — were here to help you find the right solutions
               quickly and easily.
             </p>
 

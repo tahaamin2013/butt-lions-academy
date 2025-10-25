@@ -60,7 +60,7 @@ export function FeaturedMatchSection() {
             </motion.h2>
 
             <motion.p  className="text-lg text-muted-foreground max-w-xl">
-              Join us for an intense matchup between two of the region's top field hockey teams. Experience world-class
+              Join us for an intense matchup between two of the regions top field hockey teams. Experience world-class
               athleticism, strategic gameplay, and unforgettable moments on the field.
             </motion.p>
 

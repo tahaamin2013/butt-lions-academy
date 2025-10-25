@@ -30,7 +30,7 @@ export function EventsSidebar() {
       {/* Header */}
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-8 gap-4">
         <div>
-          <p className="text-white/60 text-sm">Today's events</p>
+          <p className="text-white/60 text-sm">Todays events</p>
           <p className="text-white text-2xl font-bold">2</p>
         </div>
         <button className="w-full md:w-auto px-4 py-2 bg-white/10 hover:bg-white/20 text-white text-sm rounded-full border border-white/20 transition">
