@@ -14,6 +14,10 @@ export function Navigation() {
     { name: "Contact", href: "#contact" },
   ]
 
+  const handleLinkClick = () => {
+    setIsOpen(false)
+  }
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between">
@@ -39,12 +43,7 @@ export function Navigation() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="text-white/80 hover:text-white text-sm font-semibold transition scroll-smooth"
-              onClick={(e) => {
-                e.preventDefault()
-                const element = document.querySelector(link.href)
-                element?.scrollIntoView({ behavior: "smooth" })
-              }}
+              className="text-white/80 hover:text-white text-sm font-semibold transition"
             >
               {link.name}
             </motion.a>
@@ -62,12 +61,7 @@ export function Navigation() {
             href="#contact"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            onClick={(e) => {
-              e.preventDefault()
-              const element = document.querySelector("#contact")
-              element?.scrollIntoView({ behavior: "smooth" })
-            }}
-            className="px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition cursor-pointer"
+            className="px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition"
           >
             Contact
           </motion.a>
@@ -99,12 +93,7 @@ export function Navigation() {
                 href={link.href}
                 whileHover={{ x: 5 }}
                 className="block text-white/80 hover:text-white text-sm font-semibold"
-                onClick={(e) => {
-                  e.preventDefault()
-                  const element = document.querySelector(link.href)
-                  element?.scrollIntoView({ behavior: "smooth" })
-                  setIsOpen(false)
-                }}
+                onClick={handleLinkClick}
               >
                 {link.name}
               </motion.a>
@@ -113,13 +102,8 @@ export function Navigation() {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={(e) => {
-                e.preventDefault()
-                const element = document.querySelector("#contact")
-                element?.scrollIntoView({ behavior: "smooth" })
-                setIsOpen(false)
-              }}
-              className="w-full px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition text-center cursor-pointer"
+              onClick={handleLinkClick}
+              className="w-full px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition text-center"
             >
               Contact
             </motion.a>
