@@ -39,7 +39,12 @@ export function Navigation() {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="text-white/80 hover:text-white text-sm font-semibold transition"
+              className="text-white/80 hover:text-white text-sm font-semibold transition scroll-smooth"
+              onClick={(e) => {
+                e.preventDefault()
+                const element = document.querySelector(link.href)
+                element?.scrollIntoView({ behavior: "smooth" })
+              }}
             >
               {link.name}
             </motion.a>
@@ -53,13 +58,19 @@ export function Navigation() {
           transition={{ duration: 0.3 }}
           className="hidden md:flex items-center gap-4"
         >
-          <motion.button
+          <motion.a
+            href="#contact"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition"
+            onClick={(e) => {
+              e.preventDefault()
+              const element = document.querySelector("#contact")
+              element?.scrollIntoView({ behavior: "smooth" })
+            }}
+            className="px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition cursor-pointer"
           >
-            Register
-          </motion.button>
+            Contact
+          </motion.a>
         </motion.div>
 
         {/* Mobile Menu Button */}
@@ -88,18 +99,30 @@ export function Navigation() {
                 href={link.href}
                 whileHover={{ x: 5 }}
                 className="block text-white/80 hover:text-white text-sm font-semibold"
-                onClick={() => setIsOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault()
+                  const element = document.querySelector(link.href)
+                  element?.scrollIntoView({ behavior: "smooth" })
+                  setIsOpen(false)
+                }}
               >
                 {link.name}
               </motion.a>
             ))}
-            <motion.button
+            <motion.a
+              href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition"
+              onClick={(e) => {
+                e.preventDefault()
+                const element = document.querySelector("#contact")
+                element?.scrollIntoView({ behavior: "smooth" })
+                setIsOpen(false)
+              }}
+              className="w-full px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition text-center cursor-pointer"
             >
-              Register
-            </motion.button>
+              Contact
+            </motion.a>
           </div>
         </motion.div>
       )}
