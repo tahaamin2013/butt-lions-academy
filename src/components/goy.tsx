@@ -1,13 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 
-const Goy = ({ id, children }: any) => {
-  const [scrollMargin, setScrollMargin] = useState(0);
+interface GoyProps {
+  id: string;
+  children?: React.ReactNode;
+}
 
-  const handleButtonClick = (e: any, myelement: string) => {
+const Goy: React.FC<GoyProps> = ({ id, children }) => {
+  const handleButtonClick = (myelement: string) => {
     const newScrollMargin = 60;
-    setScrollMargin(newScrollMargin);
 
     const element = document.getElementById(myelement);
     if (element) {
@@ -19,7 +21,7 @@ const Goy = ({ id, children }: any) => {
   };
 
   return (
-    <button aria-label="Go Button" onClick={(e) => handleButtonClick(e, `${id}`)}>
+    <button aria-label="Go Button" onClick={() => handleButtonClick(id)}>
       {children}
     </button>
   );
