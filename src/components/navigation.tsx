@@ -95,26 +95,34 @@ export function Navigation() {
           className="md:hidden bg-black/80 backdrop-blur-sm border-t border-white/10"
         >
           <div className="px-6 py-4 space-y-3 flex flex-col">
-            {navLinks.map((link) => (
               <motion.a
-                key={link.name}
-                href={link.href}
-                whileHover={{ x: 5 }}
-                className="block text-white/80 hover:text-white text-sm font-semibold"
-                onClick={handleLinkClick}
+           href="/"
+                className="text-white/80 hover:text-white text-sm font-semibold transition"
+              >
+                Home
+              </motion.a>
+          {navLinks.map((link, index) => (
+            <Goy id={link.href} key={link.name}>
+              <motion.p
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className="text-white/80 hover:text-white text-sm font-semibold transition"
               >
                 {link.name}
-              </motion.a>
-            ))}
-            <motion.a
-              href="#contact"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={handleLinkClick}
-              className="w-full px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition text-center"
-            >
-              Contact
-            </motion.a>
+              </motion.p>
+            </Goy>
+          ))}
+              <Goy id="contact">
+          <motion.a
+            href="#contact"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-6 py-2 bg-white text-black rounded-full text-sm font-bold hover:bg-white/90 transition"
+          >
+            Contact
+          </motion.a>
+          </Goy>
           </div>
         </motion.div>
       )}
