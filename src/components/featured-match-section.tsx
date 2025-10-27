@@ -63,15 +63,7 @@ export function FeaturedMatchSection() {
               Join us for an intense matchup between two of the regions top field hockey teams. Experience world-class
               athleticism, strategic gameplay, and unforgettable moments on the field.
             </motion.p>
-
-            <motion.button
-              
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="flex items-center gap-2 bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition-colors"
-            >
-              GET TICKETS <ArrowRight size={20} />
-            </motion.button>
+ 
           </div>
 
           {/* Right Content - Match Image and News */}

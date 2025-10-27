@@ -6,6 +6,7 @@ import { TeamsSection } from "@/components/teams-section"
 import { FeaturedMatchSection } from "@/components/featured-match-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { ContactSection } from "@/components/contact-section"
+import  EmailForm from "@/components/EmailForm"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
       <TeamsSection />
       <FeaturedMatchSection />
       <TestimonialsSection />
-      <ContactSection />
+      <EmailForm />
       <Footer />
     </div>
   )

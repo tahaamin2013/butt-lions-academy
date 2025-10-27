@@ -82,23 +82,7 @@ export function Footer() {
           </motion.div>
 
           {/* Programs */}
-          <motion.div  className="space-y-4">
-            <h5 className="font-semibold text-white text-sm">Programs</h5>
-            <ul className="space-y-2 text-xs md:text-sm text-muted-foreground">
-              {["Junior Team", "Senior Team", "Training", "Tournaments"].map((item) => (
-                <li key={item}>
-                  <motion.a
-                    href="#"
-                    whileHover={{ x: 4, color: "#fff" }}
-                    transition={{ duration: 0.2 }}
-                    className="transition-colors"
-                  >
-                    {item}
-                  </motion.a>
-                </li>
-              ))}
-            </ul>
-          </motion.div>
+     
 
           {/* Contact */}
           <motion.div  className="space-y-4">
@@ -118,24 +102,7 @@ export function Footer() {
           className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-muted-foreground gap-4"
         >
           <p>&copy; Fighter Hockey Club 2025. All rights reserved.</p>
-          <div className="flex gap-6">
-            <motion.a
-              href="#"
-              whileHover={{ color: "#fff" }}
-              transition={{ duration: 0.2 }}
-              className="hover:text-white transition-colors"
-            >
-              Privacy Policy
-            </motion.a>
-            <motion.a
-              href="#"
-              whileHover={{ color: "#fff" }}
-              transition={{ duration: 0.2 }}
-              className="hover:text-white transition-colors"
-            >
-              Terms of Service
-            </motion.a>
-          </div>
+      
         </motion.div>
       </motion.div>
     </footer>

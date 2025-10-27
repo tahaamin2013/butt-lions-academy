@@ -3,15 +3,15 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
 import { motion } from "framer-motion"
+import Goy from "./goy"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Teams", href: "#teams" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "about" },
+    { name: "Teams", href: "teams" },
+    { name: "Contact", href: "contact" },
   ]
 
   const handleLinkClick = () => {
@@ -36,17 +36,23 @@ export function Navigation() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
+           <motion.a
+           href="/"
+                className="text-white/80 hover:text-white text-sm font-semibold transition"
+              >
+                Home
+              </motion.a>
           {navLinks.map((link, index) => (
-            <motion.a
-              key={link.name}
-              href={link.href}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.05 }}
-              className="text-white/80 hover:text-white text-sm font-semibold transition"
-            >
-              {link.name}
-            </motion.a>
+            <Goy id={link.href} key={link.name}>
+              <motion.p
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className="text-white/80 hover:text-white text-sm font-semibold transition"
+              >
+                {link.name}
+              </motion.p>
+            </Goy>
           ))}
         </div>
 
@@ -57,6 +63,7 @@ export function Navigation() {
           transition={{ duration: 0.3 }}
           className="hidden md:flex items-center gap-4"
         >
+          <Goy id="contact">
           <motion.a
             href="#contact"
             whileHover={{ scale: 1.1 }}
@@ -65,6 +72,7 @@ export function Navigation() {
           >
             Contact
           </motion.a>
+          </Goy>
         </motion.div>
 
         {/* Mobile Menu Button */}

@@ -25,7 +25,7 @@ export function AboutSection() {
   }
 
   return (
-    <section className="w-full bg-black bg-background py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8">
+    <section id="about" className="w-full bg-black bg-background py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8">
       <motion.div
         className="max-w-7xl mx-auto"
         variants={containerVariants}
@@ -95,14 +95,7 @@ export function AboutSection() {
               </p>
             </motion.div>
 
-            <motion.button
-              
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 text-black sm:px-8 py-3 sm:py-4 bg-accent text-background rounded-full font-bold hover:bg-accent/90 transition-colors text-sm sm:text-base"
-            >
-              Learn More
-            </motion.button>
+            
           </motion.div>
         </div>
       </motion.div>

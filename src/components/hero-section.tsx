@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Goy from "./goy"
 
 export function HeroSection() {
   const containerVariants = {
@@ -25,12 +26,12 @@ export function HeroSection() {
 
   return (
     <div className="flex-1 relative w-full h-screen overflow-hidden">
-      <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
-        <source
-          src="/video.mp4"
-          type="video/mp4"
-        />
-      </video>
+      <img
+        src="/junior-field-hockey-team.jpg"
+        alt="Field hockey players in action"
+        className="absolute inset-0 w-full h-full object-cover"
+        loading="eager"
+      />
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40" />
@@ -74,6 +75,7 @@ export function HeroSection() {
           className="flex  mt-6 flex-row items-center gap-3 md:gap-4 w-full md:w-auto"
           
         >
+          <Goy id="contact">
           <motion.button
             className="w-full md:w-auto px-6 md:px-8 py-3 bg-white text-black rounded-full font-black hover:bg-white/90 transition text-base md:text-lg"
             whileHover={{ scale: 1.05 }}
@@ -81,13 +83,8 @@ export function HeroSection() {
           >
             Join the team
           </motion.button>
-          <motion.button
-            className="w-full md:w-auto px-6 md:px-8 py-3 border-2 border-white text-white rounded-full font-bold hover:bg-white/10 transition text-base md:text-lg"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Explore membership
-          </motion.button>
+          </Goy>
+
         </motion.div>
         </div>
 

@@ -38,7 +38,7 @@ export function TeamsSection() {
   ]
 
   return (
-    <section className="w-full bg-black py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8">
+    <section id="teams" className="w-full bg-black py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8">
       <motion.div
         className="max-w-7xl mx-auto"
         variants={containerVariants}
@@ -81,13 +81,7 @@ export function TeamsSection() {
                         {team.description}
                       </p>
                     </div>
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-black rounded-full font-bold hover:bg-accent transition-colors text-sm sm:text-base"
-                    >
-                      Learn More
-                    </motion.button>
+           
                   </div>
                 </>
               ) : (
@@ -101,13 +95,7 @@ export function TeamsSection() {
                         {team.description}
                       </p>
                     </div>
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-black rounded-full font-bold hover:bg-accent transition-colors text-sm sm:text-base"
-                    >
-                      Learn More
-                    </motion.button>
+              
                   </div>
                   <div className="rounded-lg sm:rounded-2xl overflow-hidden h-48 sm:h-64 md:h-80 lg:h-96 order-1 md:order-2">
                     <Image
