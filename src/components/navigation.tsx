@@ -29,9 +29,9 @@ export function Navigation() {
           className="flex items-center gap-2"
         >
           <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-            <span className="text-black font-bold text-sm">FH</span>
+            <span className="text-black font-bold text-sm">BLA</span>
           </div>
-          <span className="text-white font-bold text-xs md:text-lg">Fighter Hockey</span>
+          <span className="text-white font-bold text-xs md:text-lg">Butt Lions Academy</span>
         </motion.div>
 
         {/* Desktop Navigation */}

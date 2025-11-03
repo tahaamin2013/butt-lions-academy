@@ -49,7 +49,7 @@ export function TeamsSection() {
         <motion.div  className="mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-2xl text-white sm:text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-2 sm:mb-4">Teams</h2>
           <p className="text-sm text-white sm:text-base md:text-lg text-muted-foreground max-w-2xl">
-            Explore our competitive teams and join the Fighter Hockey Club family.
+            Explore our competitive teams and join the Butt Lions Academy Club family.
           </p>
         </motion.div>
 

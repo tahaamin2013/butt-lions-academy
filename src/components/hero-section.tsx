@@ -54,7 +54,7 @@ export function HeroSection() {
               <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
             </svg>
           </div>
-          <span className="text-white/60 text-xs md:text-sm font-bold">FIGHTER HOCKEY</span>
+          <span className="text-white/60 text-xs md:text-sm font-bold">Butt Lions Academy</span>
         </motion.div>
         <motion.h1
     className="text-4xl md:text-6xl lg:text-8xl font-black text-white leading-tight mb-4 md:mb-6"

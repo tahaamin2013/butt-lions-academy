@@ -25,7 +25,7 @@ export function FeaturedMatchSection() {
   }
 
   const upcomingMatches = [
-    { title: "Fighter Hockey vs City Hawks", views: "24 videos" },
+    { title: "Butt Lions Academy vs City Hawks", views: "24 videos" },
     { title: "Championship Finals Preview", views: "18 videos" },
     { title: "Player Highlights Compilation", views: "32 videos" },
   ]
@@ -53,7 +53,7 @@ export function FeaturedMatchSection() {
               
               className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
             >
-              Fighter Hockey
+              Butt Lions Academy
               <span className="text-orange-500"> vs City</span>
               <br />
               Hawks

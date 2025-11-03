@@ -43,9 +43,9 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <motion.div  className="space-y-4">
-            <h4 className="text-xl font-bold text-white">FH</h4>
+            <h4 className="text-xl font-bold text-white">BLA</h4>
             <p className="text-muted-foreground text-xs md:text-sm">
-              Fighter Hockey Club - Developing champions on and off the field.
+              Butt Lions Academy Club - Developing champions on and off the field.
             </p>
             <div className="flex gap-3">
               {[Facebook, Instagram, Linkedin, Twitter].map((Icon, index) => (
@@ -101,7 +101,7 @@ export function Footer() {
           
           className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs md:text-sm text-muted-foreground gap-4"
         >
-          <p>&copy; Fighter Hockey Club 2025. All rights reserved.</p>
+          <p>&copy; Butt Lions Academy Club 2025. All rights reserved.</p>
       
         </motion.div>
       </motion.div>

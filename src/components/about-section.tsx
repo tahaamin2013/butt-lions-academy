@@ -90,7 +90,7 @@ export function AboutSection() {
             <motion.div >
               <h3 className="text-lg text-white sm:text-xl md:text-2xl font-bold text-foreground mb-2">Our History</h3>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Founded with a vision to transform field hockey in our region, Fighter Hockey Club has grown into a
+                Founded with a vision to transform field hockey in our region, Butt Lions Academy Club has grown into a
                 leading institution for athlete development and competitive excellence.
               </p>
             </motion.div>

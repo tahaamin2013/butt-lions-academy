@@ -30,7 +30,7 @@ export function TestimonialsSection() {
       role: "Senior Player",
       image: "/female-athlete.png",
       rating: 5,
-      text: "The training program at Fighter Hockey Club has transformed my game. The coaching staff is exceptional and truly invested in our development.",
+      text: "The training program at Butt Lions Academy Club has transformed my game. The coaching staff is exceptional and truly invested in our development.",
     },
     {
       name: "James Chen",
@@ -63,7 +63,7 @@ export function TestimonialsSection() {
             What Our Community Says
           </h2>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-            Hear from our players, families, and supporters about their experience with Fighter Hockey Club.
+            Hear from our players, families, and supporters about their experience with Butt Lions Academy Club.
           </p>
         </motion.div>
 
